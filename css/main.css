@@ -155,6 +155,18 @@ h2 {
     transform: skewY(2deg);
 
 }
+footer .credentials .pollux{
+   
+    color: #fff;
+
+}
+
+
+
+footer .credentials {
+    text-align: center;
+    transform: skewY(-2deg);
+}
 
 .footer-container .container 
 {

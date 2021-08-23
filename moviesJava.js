@@ -61,10 +61,15 @@ const movieContainer = document.querySelector(".movie-container");
 
 data.forEach(movie => {
     const movieDiv = document.createElement("div");
+    const imageDiv = document.createElement("div");
     var img = document.createElement("img");
+    var title = document.createElement("p");
+    title.innerHTML = movie.Title;
     img.src = movie.Poster;
+    movieDiv.classList.add("imageDiv");
     img.classList.add("imgWidth");
-    movieDiv.appendChild(img);
+    imageDiv.appendChild(img);
+    movieDiv.appendChild(imageDiv);
     movieContainer.appendChild(movieDiv);
 })
 
